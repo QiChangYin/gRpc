@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+
+service CalculatorService
+{
+  rpc SquareReq (SquareREQ) returns (SquareRESP) {}
+}
+
+message SquareREQ
+{
+  int32 number = 1;
+  string name = 2;
+}
+
+message SquareRESP
+{
+  int32 number = 1;
+}
