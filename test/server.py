@@ -11,7 +11,7 @@ import cal
 
 
 class CalService(demo_pb2_grpc.CalculatorServiceServicer):
-    def SquareRes(self, request, response):
+    def SquareReq(self, request, response):
         response = demo_pb2.SquareREQ()
         response.number = cal.square_request(request.number)
         return response

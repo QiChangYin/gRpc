@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='demo.proto',
   package='',
   syntax='proto3',
-  serialized_pb=_b('\n\ndemo.proto\")\n\tSquareREQ\x12\x0e\n\x06number\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\"\x1c\n\nSquareRESP\x12\x0e\n\x06number\x18\x01 \x01(\x05\x32;\n\x11\x43\x61lculatorService\x12&\n\tSquareReq\x12\n.SquareREQ\x1a\x0b.SquareRESP\"\x00\x62\x06proto3')
+  serialized_pb=_b('\n\ndemo.proto\")\n\tSquareREQ\x12\x0e\n\x06number\x18\x01 \x01(\x02\x12\x0c\n\x04name\x18\x02 \x01(\t\"\x1c\n\nSquareRESP\x12\x0e\n\x06number\x18\x01 \x01(\x02\x32;\n\x11\x43\x61lculatorService\x12&\n\tSquareReq\x12\n.SquareREQ\x1a\x0b.SquareRESP\"\x00\x62\x06proto3')
 )
 
 
@@ -34,8 +34,8 @@ _SQUAREREQ = _descriptor.Descriptor(
   fields=[
     _descriptor.FieldDescriptor(
       name='number', full_name='SquareREQ.number', index=0,
-      number=1, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
+      number=1, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None, file=DESCRIPTOR),
@@ -72,8 +72,8 @@ _SQUARERESP = _descriptor.Descriptor(
   fields=[
     _descriptor.FieldDescriptor(
       name='number', full_name='SquareRESP.number', index=0,
-      number=1, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
+      number=1, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None, file=DESCRIPTOR),
